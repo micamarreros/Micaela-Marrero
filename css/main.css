@@ -8,7 +8,40 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap');
   
 body {
-    background-color: #FBEBFF;
+    background-color: #FBEBFF;    
+    font-size: 1rem;
+    color: #C09AC8;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/*------ para dispositivos medianos -----*/
+@media (min-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+}
+
+/*------ para dispositivos desktop large -----*/
+@media (min-width: 992px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+/*------ para dispositivos desktop xx-large -----*/
+@media (min-width: 1400px) {
+    h1 {
+        font-size: 1.9rem;
+    }
 }
   
 /*------ NAVEGACION -----*/
@@ -110,13 +143,6 @@ body {
 #welcome {
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 1rem;
-    color: #C09AC8;
-}
-
-#welcome h1 {
-    font-weight: bold;
-    font-size: 1.5rem;
 }
 
 /*------ para dispositivos medianos -----*/
@@ -125,10 +151,6 @@ body {
         padding-top: 30px;
         padding-bottom: 30px;
         font-size: 1.1rem;
-    }
-    
-    #welcome h1 {
-        font-size: 1.6rem;
     }
 }
 
@@ -139,10 +161,6 @@ body {
         padding-bottom: 40px;
         font-size: 1.2rem;
     }
-    
-    #welcome h1 {
-        font-size: 1.7rem;
-    }
 }
 
 /*------ para dispositivos desktop xx-large -----*/
@@ -152,10 +170,6 @@ body {
         padding-bottom: 50px;
         font-size: 1.4rem;
     }
-    
-    #welcome h1 {
-        font-size: 1.9rem;
-    }
 }
 
 /*----------- ACA EMPIEZAN LOS ESTILOS DE ACERCA DE MI ----------*/
@@ -164,11 +178,6 @@ body {
     flex-direction: column;
     padding: 40px 40px 0 40px;
     color: #C09AC8;
-}
-
-#card h1 {
-    font-size: 1.6rem;
-    font-weight: bold;
 }
 
 #card img {
@@ -186,11 +195,6 @@ body {
 /*------ TABLA INFO -----*/
 #tabla-info {
     padding: 20px 40px 20px 40px;
-}
-
-#tabla-info h2{
-    font-size: 1.4rem;
-    font-weight: bold;
 }
 
 /*------ FORMACION ACADEMICA -----*/
@@ -211,14 +215,45 @@ body {
     font-weight: normal;
 }
 
+/*------ para dispositivos medianos -----*/
+@media (min-width: 768px) {    
+      
+}
+
+/*------ para dispositivos desktop large -----*/
+@media (min-width: 992px) {
+    
+}
+
+/*------ para dispositivos desktop xx-large -----*/
+@media (min-width: 1400px) {
+    
+}
+
 /*----------- ACA EMPIEZAN LOS ESTILOS DE PROYECTOS ----------*/
 #galeria {
     flex-direction: column;
 }
 
 #galeria img {
-    width: 90%;
+    width: 100%;
     padding: 20px;
+    border-radius: 20px; /*(((((no funciona esta propiedad- ver porque pasa esto)))))*/
+}
+
+/*------ para dispositivos medianos -----*/
+@media (min-width: 768px) {    
+      
+}
+
+/*------ para dispositivos desktop large -----*/
+@media (min-width: 992px) {
+    
+}
+
+/*------ para dispositivos desktop xx-large -----*/
+@media (min-width: 1400px) {
+    
 }
 
 /*------ FOOTER -----*/
@@ -276,4 +311,43 @@ body {
     #footer img {
         height: 50px;
     }
+}
+
+/*----------- ACA EMPIEZAN LOS ESTILOS DE SERVICIOS ----------*/
+#servicios {
+    flex-direction: column;
+    padding: 40px;
+}
+
+#card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: solid 5px #C09AC8;
+}
+
+#card-text {
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+/*----------- ACA EMPIEZAN LOS ESTILOS DE CONTACTO ----------*/
+#form_id {
+    padding: 40px;
+}
+
+#nombre, #apellido, #email, #telefono, #mensaje {
+    border: #C09AC8 solid 1px;
+}
+
+#send-button {
+    background-color: #C09AC8;
+    border: #C09AC8 solid 1px;
+    width: 15%;
+}
+
+#send-button:hover {
+    background-color: #fff;
+    border: #C09AC8 solid 1px;
+    color: #C09AC8;
 }

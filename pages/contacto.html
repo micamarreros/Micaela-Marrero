@@ -49,41 +49,53 @@
   <!----- FIN NAVBAR ----->
   
   <!----- INICIO FORMULARIO ----->
-  <form>
-    <div class="container-fluid" id="info-form">
+  <form action="" method="POST" enctype="multipart/form-data" id="form_id">
+
+    <div class="container-fluid col-md-10 col-lg-10 col-xl-10" id="info-form">
       <h1>¿Tenés alguna consulta?</h1>
       <p>
         Contáctate conmigo en theillustratedpixels@gmail.com o dejá tus datos para que te contacte.
       </p>
     </div>
 
-    <div class="mb-3">
-      <label for="name" class="form-label">Nombre</label>
-      <input type="text" class="form-control" id="nombre">
-    </div>
+    <!----- formulario ----->
+    <div class="container-fluid col-md-10 col-lg-10 col-xl-10" id="form">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre">
+      </div>
+  
+      <div class="mb-3">
+        <label for="surname" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="apellido">
+      </div>
+  
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      
+      <div class="mb-3">
+        <label for="phone" class="form-label">Teléfono</label>
+        <input type="number" class="form-control" id="telefono">
+      </div>
 
-    <div class="mb-3">
-      <label for="surname" class="form-label">Apellido</label>
-      <input type="text" class="form-control" id="apellido">
-    </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Mensaje...</label>
+        <textarea class="form-control" id="mensaje" rows="6"></textarea>        
+      </div>
+    
+      <!----- checkbox newsletter ----->
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Quiero suscribirme al newsletter</label>
+      </div>
 
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email">
+      <!----- boton enviar ----->
+      <button type="submit" class="btn btn-primary" id="send-button">Enviar</button>
     </div>
-    
-    <div class="mb-3">
-      <label for="phone" class="form-label">Teléfono</label>
-      <input type="number" class="form-control" id="telefono">
-    </div>
-    
-    <!----- checkbox newsletter-->
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Quiero suscribirme al newsletter</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+   
   <!----- FIN FORMULARIO ----->
 
   <!----- INICIO FOOTER ----->
