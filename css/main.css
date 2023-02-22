@@ -343,7 +343,6 @@ h2{
 #send-button {
     background-color: #C09AC8;
     border: #C09AC8 solid 1px;
-    width: 15%;
 }
 
 #send-button:hover {
