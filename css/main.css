@@ -222,7 +222,7 @@ h2{
 }
 
 #galeria img {
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
     border: #C09AC8 solid 4px;
 }
@@ -230,8 +230,6 @@ h2{
 #galeria-1, #galeria-2 {
     padding-bottom: 25px;
 }
-
-
 
 /*----------- ACA EMPIEZAN LOS ESTILOS DE SERVICIOS ----------*/
 #servicios {
