@@ -73,7 +73,7 @@ h2{
     }
     
     .nav-link {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -232,14 +232,13 @@ h2{
 
 #galeria img:hover {
     transition: all 1s ease;
-    -webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+    -webkit-filter: blur(0px); 
     filter: blur(0px);
 }
 
 #galeria-1, #galeria-2 {
     padding-bottom: 25px;
 }
-
 /*------ proyectos individuales -----*/
 #text-center {
     padding: 40px 40px 20px 40px;
@@ -327,7 +326,7 @@ h2{
 /*------ para dispositivos medianos -----*/
 @media (min-width: 768px) {
     #footer {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     
     #footer img {
