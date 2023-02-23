@@ -240,15 +240,6 @@ h2{
     padding-bottom: 25px;
 }
 
-.overlay {
-    opacity: 0;
-    transition: .5s ease;
-}
-
-#galeria-1:hover .overlay {
-    opacity: 1;
-}
-
 /*------ proyectos individuales -----*/
 #text-center {
     padding: 40px 40px 20px 40px;
