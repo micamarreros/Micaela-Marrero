@@ -239,7 +239,12 @@ h2{
 #galeria-1, #galeria-2 {
     padding-bottom: 25px;
 }
+
 /*------ proyectos individuales -----*/
+.proyecto {
+    background-color: #EDEDED;
+}
+
 #text-center {
     padding: 40px 40px 20px 40px;
 }
