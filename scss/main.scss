@@ -217,6 +217,7 @@ h2{
 #galeria {
     flex-direction: column;
     padding: 40px 0 20px 0;
+    position: relative;
     img {
         width: 80%;
         border-radius: 20px;
@@ -237,6 +238,22 @@ h2{
         a {
             display: flex;
             justify-content: center;
+        }
+        .portfolio-text {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: 1s;
+            display: none;
+        }
+        .portfolio-text:hover {
+            top: 40;
+            right: 0;
+            bottom: 20;
+            left: 0;
+            background: #555555;
+            padding: 20px;
         }
     }
 }
