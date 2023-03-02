@@ -193,7 +193,6 @@ h2 {
 #galeria {
   flex-direction: column;
   padding: 40px 0 20px 0;
-  position: relative;
 }
 #galeria img {
   width: 80%;
@@ -214,22 +213,6 @@ h2 {
 #galeria .portfolio-item a {
   display: flex;
   justify-content: center;
-}
-#galeria .portfolio-item .portfolio-text {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transition: 1s;
-  display: none;
-}
-#galeria .portfolio-item .portfolio-text:hover {
-  top: 40;
-  right: 0;
-  bottom: 20;
-  left: 0;
-  background: #555555;
-  padding: 20px;
 }
 
 /*------ proyectos individuales -----*/
