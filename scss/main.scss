@@ -6,11 +6,20 @@
   }
   
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap');
-  
+
+/* Colores */
+$dark-purple: #C09AC8;
+$light-purple: #FBEBFF;
+$grey: #EDEDED;
+$white: #fff;
+$black: #000;
+
+/* Paddings y margins */
+
 body {
-    background-color: #FBEBFF;    
+    background-color: $light-purple;    
     font-size: 1rem;
-    color: #C09AC8;
+    color: $dark-purple;
 }
 
 h1 {
@@ -46,7 +55,7 @@ h2{
   
 /*------ NAVEGACION -----*/
 #navbar {
-    background-color: #C09AC8 !important; /*no pude cambiar el color de otra manera que no sea con !important*/
+    background-color: $dark-purple !important; /*no pude cambiar el color de otra manera que no sea con !important*/
 }
 
 .navbar-brand img {
@@ -56,7 +65,7 @@ h2{
 }
 
 .nav-link {
-    color: #fff;
+    color: $white;
     font-weight: bold;
     padding: 20px !important; /*no pude agregar padding a los elementos de la lista de otra manera que no sea con !important*/
 }
@@ -100,10 +109,9 @@ h2{
     
     .nav-link {
         font-size: 1rem;
+        &:hover {
+            color: $light-purple;
     }
-
-    .nav-link:hover {
-        color: #D6BCDC;
     }
 }
 
@@ -176,7 +184,7 @@ h2{
 #card, #tabla-info {
     flex-direction: column;
     padding: 40px 40px 0 40px;
-    color: #C09AC8;
+    color: $dark-purple;
 }
 
 #card {
@@ -184,7 +192,7 @@ h2{
         width: 180px;
         height: 180px;
         border-radius: 50%;
-        border: solid 5px #C09AC8;
+        border: solid 5px $dark-purple;
     }
     p {
         padding-top: 20px;
@@ -220,15 +228,15 @@ h2{
     img {
         width: 80%;
         border-radius: 20px;
-        border: #C09AC8 solid 4px;
+        border: $dark-purple solid 4px;
         transition: all 1s ease;
         -webkit-filter: blur(4px);
         filter: blur(1px);
-    }
-    img:hover {
-        transition: all 1s ease;
-        -webkit-filter: blur(0px); 
-        filter: blur(0px);
+        &:hover {
+            transition: all 1s ease;
+            -webkit-filter: blur(0px); 
+            filter: blur(0px);
+        }
     }
     #galeria-1, #galeria-2 {
         padding-bottom: 25px;
@@ -243,13 +251,13 @@ h2{
 
 /*------ proyectos individuales -----*/
 #proyecto {
-    background-color: #EDEDED;
+    background-color: $grey;
     #text-center {
         padding: 40px 40px 20px 40px;
         h2 {
             font-size: 0.9rem;
-            color: #fff;
-            background-color: #C09AC8;
+            color: $white
+            background-color: $dark-purple;
             border-radius: 20px;
             padding: 10px;
         }
@@ -274,25 +282,25 @@ h2{
     padding: 40px;
     form {
         #nombre, #apellido, #email, #telefono, #mensaje {
-            border: #C09AC8 solid 1px;
+            border: $dark-purple solid 1px;
         }
         #send-button {
             background-color: #C09AC8;
-            border: #C09AC8 solid 1px;
-        }
-        #send-button:hover {
-            background-color: #fff;
-            border: #C09AC8 solid 1px;
-            color: #C09AC8;
+            border: $dark-purple solid 1px;
+            &:hover {
+                background-color: #fff;
+                border: $dark-purple solid 1px;
+                color: $dark-purple;
+            }
         }
     }
 }
 
 /*------ FOOTER -----*/
 #footer {
-    background-color: #C09AC8;
+    background-color: $dark-purple;
     font-weight: 500;
-    color: #fff;
+    color: $white;
 }
 
 #footer img {
