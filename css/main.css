@@ -38,6 +38,7 @@ h2 {
 /* Widths */
 /* Heights */
 /* Widths & Heights */
+/* Borders */
 body {
   background-color: #FBEBFF;
   font-size: 1rem;
@@ -58,7 +59,10 @@ body {
 .nav-link {
   color: #fff;
   font-weight: bold;
-  padding: 20px; /*no pude agregar padding a los elementos de la lista de otra manera que no sea con !important*/
+  padding: 20px;
+}
+.nav-link:hover {
+  color: #FBEBFF;
 }
 
 .navbar-nav {
@@ -95,9 +99,6 @@ body {
   }
   .nav-link {
     font-size: 1rem;
-  }
-  .nav-link:hover {
-    color: #FBEBFF;
   }
 }
 /*----------- ACA EMPIEZAN LOS ESTILOS DE INDEX ----------*/
