@@ -5,110 +5,77 @@
     font-family: 'Montserrat', sans-serif;
   }
   
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap');
 
-/* Colores */
-$dark-purple: #C09AC8;
-$light-purple: #FBEBFF;
-$grey: #EDEDED;
-$white: #fff;
-$black: #000;
 
-/* Paddings y margins */
+@import "colores";
+@import "titulos";
+@import "paddings";
+@import "font_sizes";
+@import "dimensions";
 
 body {
     background-color: $light-purple;    
-    font-size: 1rem;
+    font-size: $f_1;
     color: $dark-purple;
 }
 
-h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-h2{
-    font-size: 1.4rem;
-    font-weight: bold;
-}
-
-/*------ para dispositivos medianos -----*/
-@media (min-width: 768px) {
-    h1 {
-        font-size: 1.6rem;
-    }
-}
-
-/*------ para dispositivos desktop large -----*/
-@media (min-width: 992px) {
-    h1 {
-        font-size: 1.7rem;
-    }
-}
-
-/*------ para dispositivos desktop xx-large -----*/
-@media (min-width: 1400px) {
-    h1 {
-        font-size: 1.9rem;
-    }
-}
-  
 /*------ NAVEGACION -----*/
 #navbar {
     background-color: $dark-purple !important; /*no pude cambiar el color de otra manera que no sea con !important*/
 }
 
 .navbar-brand img {
-    height: 40px;
+    height: $h40;
     width: auto;
-    padding-left: 20px;
+    padding-left: $p20;
 }
 
 .nav-link {
     color: $white;
     font-weight: bold;
-    padding: 20px !important; /*no pude agregar padding a los elementos de la lista de otra manera que no sea con !important*/
+    padding: $p20; /*no pude agregar padding a los elementos de la lista de otra manera que no sea con !important*/
 }
 
 .navbar-nav {
-    padding-right: 50px;
+    padding-right: $p50;
 }
 
 /*------ para dispositivos medianos -----*/
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .navbar-brand img {
-        height: 50px;
+        height: $h50;
         width: auto;
     }
     
     .nav-link {
-        font-size: 0.7rem;
+        font-size: $f_07;
     }
 }
 
-/*------ para dispositivos desktop large -----*/
-@media (min-width: 992px) {
+/*------ para dispositivos desktop -----*/
+@media (min-width: $desktop) {
     .navbar-brand img {
-        height: 60px;
+        height: $h60;
         width: auto;
-        padding-left: 50px;
+        padding-left: $p50;
     }
     
     .nav-link {
-        font-size: 0.9rem;
+        font-size: $f_09;
     }
 }
 
 /*------ para dispositivos desktop xx-large -----*/
-@media (min-width: 1400px) {
+@media (min-width: $desktop-xxl) {
     .navbar-brand img {
-        height: 80px;
+        height: $h80;
         width: auto;
-        padding-left: 70px;
+        padding-left: $p70;
     }
     
     .nav-link {
-        font-size: 1rem;
+        font-size: $f_1;
         &:hover {
             color: $light-purple;
     }
@@ -125,21 +92,21 @@ h2{
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     #carousel {
         padding: 40px 40px 0 40px;
     }
 }
 
-/*------ para dispositivos desktop large -----*/
-@media (min-width: 992px) {
+/*------ para dispositivos desktop-----*/
+@media (min-width: $desktop) {
     #carousel {
         padding: 50px 50px 0 50px;
     }
 }
 
 /*------ para dispositivos desktop xx-large -----*/
-@media (min-width: 1400px) {
+@media (min-width: $desktop-xxl) {
     #carousel {
         padding: 80px 180px 0 180px;
     }
@@ -148,34 +115,34 @@ h2{
 /*------ WELCOME -----*/
 
 #welcome {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: $p20;
+    padding-bottom: $p20;
 }
 
 /*------ para dispositivos medianos -----*/
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     #welcome {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        font-size: 1.1rem;
+        padding-top: $p30;
+        padding-bottom: $p30;
+        font-size: $f_11;
     }
 }
 
-/*------ para dispositivos desktop large -----*/
-@media (min-width: 992px) {
+/*------ para dispositivos desktop -----*/
+@media (min-width: $desktop) {
     #welcome {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        font-size: 1.2rem;
+        padding-top: $p40;
+        padding-bottom: $p40;
+        font-size: $f_12;
     }
 }
 
 /*------ para dispositivos desktop xx-large -----*/
-@media (min-width: 1400px) {
+@media (min-width: $desktop-xxl) {
     #welcome {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        font-size: 1.4rem;
+        padding-top: $p50;
+        padding-bottom: $p50;
+        font-size: $f_14;
     }
 }
 
@@ -189,13 +156,13 @@ h2{
 
 #card {
     img {
-        width: 180px;
-        height: 180px;
+        width: $wh_180;
+        height: $wh_180;
         border-radius: 50%;
         border: solid 5px $dark-purple;
     }
     p {
-        padding-top: 20px;
+        padding-top: $p20;
         font-weight: 500;
     }
 }
@@ -224,24 +191,21 @@ h2{
 
 #galeria {
     flex-direction: column;
-    padding: 40px 0 20px 0;
+    padding: 40px 0 40px 0;
     img {
-        width: 80%;
+        width: $wpercent_80;
         border-radius: 20px;
         border: $dark-purple solid 4px;
         transition: all 1s ease;
-        -webkit-filter: blur(4px);
-        filter: blur(1px);
+        filter: saturate(0);
         &:hover {
             transition: all 1s ease;
-            -webkit-filter: blur(0px); 
-            filter: blur(0px);
+            filter: saturate(1);
+            transform: scale(1.1);
         }
     }
-    #galeria-1, #galeria-2 {
-        padding-bottom: 25px;
-    }
     .portfolio-item {
+        padding: $p20;
         a {
             display: flex;
             justify-content: center;
@@ -251,21 +215,21 @@ h2{
 
 /*------ proyectos individuales -----*/
 #proyecto {
-    background-color: $grey;
+    background-color: $white;
     #text-center {
         padding: 40px 40px 20px 40px;
         h2 {
-            font-size: 0.9rem;
-            color: $white
+            font-size: $f_1;
+            color: $white;
             background-color: $dark-purple;
             border-radius: 20px;
-            padding: 10px;
+            padding: $p10;
         }
     }
     #proyect-img {
-        padding-bottom: 40px;
+        padding-bottom: $p40;
         img {
-            width: 100%;
+            width: $wpercent_100;
             padding: 0 20px 0 20px;
         }
     }
@@ -274,12 +238,12 @@ h2{
 /*----------- ACA EMPIEZAN LOS ESTILOS DE SERVICIOS ----------*/
 #servicios {
     flex-direction: column;
-    padding: 40px;
+    padding: $p40;
 }
 
 /*----------- ACA EMPIEZAN LOS ESTILOS DE CONTACTO ----------*/
 #form_id {
-    padding: 40px;
+    padding: $p40;
     form {
         #nombre, #apellido, #email, #telefono, #mensaje {
             border: $dark-purple solid 1px;
@@ -304,51 +268,51 @@ h2{
 }
 
 #footer img {
-    height: 25px;
+    height: $h25;
 }
 
 #info {
-    padding-top: 20px;
+    padding-top: $p20;
 }
 
 #links-redes {
-    padding-top: 20px;
+    padding-top: $p20;
 }
 
 #copyright {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: $p20;
+    padding-bottom: $p10;
 }
 
 /*------ para dispositivos medianos -----*/
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     #footer {
-        font-size: 0.7rem;
+        font-size: $f_07;
     }
     
     #footer img {
-        height: 30px;
+        height: $h30;
     }
 }
 
-/*------ para dispositivos desktop large -----*/
-@media (min-width: 992px) {
+/*------ para dispositivos desktop -----*/
+@media (min-width: $desktop) {
     #footer {
-        font-size: 0.9rem;
+        font-size: $f_09;
     }
     
     #footer img {
-        height: 40px;
+        height: $h40;
     }
 }
 
 /*------ para dispositivos desktop xx-large -----*/
-@media (min-width: 1400px) {
+@media (min-width: $desktop-xxl) {
     #footer {
-        font-size: 1rem;
+        font-size: $f_1;
     }
     
     #footer img {
-        height: 50px;
+        height: $h50;
     }
 }
