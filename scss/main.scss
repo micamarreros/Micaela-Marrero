@@ -249,10 +249,10 @@ body {
             border: $dark-purple solid 1px;
         }
         #send-button {
-            background-color: #C09AC8;
+            background-color: $dark-purple;
             border: $dark-purple solid 1px;
             &:hover {
-                background-color: #fff;
+                background-color: $white;
                 border: $dark-purple solid 1px;
                 color: $dark-purple;
             }
