@@ -50,10 +50,33 @@ body {
   background-color: #C09AC8 !important; /*no pude cambiar el color de otra manera que no sea con !important*/
 }
 
-.navbar-brand img {
-  height: 40px;
-  width: auto;
-  padding-left: 20px;
+@media (max-width: 425px) {
+  .navbar-brand img {
+    height: 40px;
+    width: auto;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-brand img {
+    height: 50px;
+    width: auto;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar-brand img {
+    height: 60px;
+    width: auto;
+    padding-left: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .navbar-brand img {
+    height: 80px;
+    width: auto;
+    padding-left: 70px;
+  }
 }
 
 .nav-link {
@@ -64,43 +87,31 @@ body {
 .nav-link:hover {
   color: #FBEBFF;
 }
+@media (max-width: 425px) {
+  .nav-link {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1440px) {
+  .nav-link {
+    font-size: 1rem;
+  }
+}
 
 .navbar-nav {
   padding-right: 50px;
 }
 
-/*------ para dispositivos medianos -----*/
-@media (min-width: 768px) {
-  .navbar-brand img {
-    height: 50px;
-    width: auto;
-  }
-  .nav-link {
-    font-size: 0.7rem;
-  }
-}
-/*------ para dispositivos desktop -----*/
-@media (min-width: 992px) {
-  .navbar-brand img {
-    height: 60px;
-    width: auto;
-    padding-left: 50px;
-  }
-  .nav-link {
-    font-size: 0.9rem;
-  }
-}
-/*------ para dispositivos desktop xx-large -----*/
-@media (min-width: 1400px) {
-  .navbar-brand img {
-    height: 80px;
-    width: auto;
-    padding-left: 70px;
-  }
-  .nav-link {
-    font-size: 1rem;
-  }
-}
 /*----------- ACA EMPIEZAN LOS ESTILOS DE INDEX ----------*/
 /*------ CAROUSEL -----*/
 #carousel {
@@ -270,9 +281,46 @@ body {
   font-weight: 500;
   color: #fff;
 }
+@media (max-width: 425px) {
+  #footer {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 768px) {
+  #footer {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  #footer {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1440px) {
+  #footer {
+    font-size: 1rem;
+  }
+}
 
-#footer img {
-  height: 25px;
+@media (max-width: 425px) {
+  #footer img {
+    height: 25px;
+  }
+}
+@media (min-width: 768px) {
+  #footer img {
+    height: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #footer img {
+    height: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  #footer img {
+    height: 50px;
+  }
 }
 
 #info {
@@ -286,34 +334,6 @@ body {
 #copyright {
   padding-top: 20px;
   padding-bottom: 10px;
-}
-
-/*------ para dispositivos medianos -----*/
-@media (min-width: 768px) {
-  #footer {
-    font-size: 0.7rem;
-  }
-  #footer img {
-    height: 30px;
-  }
-}
-/*------ para dispositivos desktop -----*/
-@media (min-width: 992px) {
-  #footer {
-    font-size: 0.9rem;
-  }
-  #footer img {
-    height: 40px;
-  }
-}
-/*------ para dispositivos desktop xx-large -----*/
-@media (min-width: 1400px) {
-  #footer {
-    font-size: 1rem;
-  }
-  #footer img {
-    height: 50px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

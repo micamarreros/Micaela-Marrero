@@ -14,6 +14,7 @@
 @import "font_sizes";
 @import "dimensions";
 @import "borders";
+@import "mediaqueries";
 
 body {
     background-color: $light-purple;    
@@ -27,9 +28,26 @@ body {
 }
 
 .navbar-brand img {
-    height: $h40;
-    width: auto;
-    padding-left: $p20;
+    @include mobile {
+        height: $h40;
+        width: auto;
+        padding-left: $p20;
+    }
+    @include tablet {
+        height: $h50;
+        width: auto;
+        padding-left: $p20;
+    }
+    @include desktop {
+        height: $h60;
+        width: auto;
+        padding-left: $p50;
+    }
+    @include desktop-xl{
+        height: $h80;
+        width: auto;
+        padding-left: $p70;
+    }
 }
 
 .nav-link {
@@ -38,49 +56,23 @@ body {
     padding: $p20;
     &:hover {
         color: $light-purple;
-}
+    }
+    @include mobile {
+        font-size: $f_07;
+    }
+    @include tablet {
+        font-size: $f_07;
+    }
+    @include desktop {
+        font-size: $f_09;
+    }
+    @include desktop-xl{
+        font-size: $f_1;
+    }
 }
 
 .navbar-nav {
     padding-right: $p50;
-}
-
-/*------ para dispositivos medianos -----*/
-@media (min-width: $tablet) {
-    .navbar-brand img {
-        height: $h50;
-        width: auto;
-    }
-    
-    .nav-link {
-        font-size: $f_07;
-    }
-}
-
-/*------ para dispositivos desktop -----*/
-@media (min-width: $desktop) {
-    .navbar-brand img {
-        height: $h60;
-        width: auto;
-        padding-left: $p50;
-    }
-    
-    .nav-link {
-        font-size: $f_09;
-    }
-}
-
-/*------ para dispositivos desktop xx-large -----*/
-@media (min-width: $desktop-xxl) {
-    .navbar-brand img {
-        height: $h80;
-        width: auto;
-        padding-left: $p70;
-    }
-    
-    .nav-link {
-        font-size: $f_1;
-    }
 }
 
 /*----------- ACA EMPIEZAN LOS ESTILOS DE INDEX ----------*/
@@ -93,21 +85,21 @@ body {
     }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: 768px) {
     #carousel {
         padding: 40px 40px 0 40px;
     }
 }
 
 /*------ para dispositivos desktop-----*/
-@media (min-width: $desktop) {
+@media (min-width: 992px) {
     #carousel {
         padding: 50px 50px 0 50px;
     }
 }
 
 /*------ para dispositivos desktop xx-large -----*/
-@media (min-width: $desktop-xxl) {
+@media (min-width: 1400px) {
     #carousel {
         padding: 80px 180px 0 180px;
     }
@@ -121,7 +113,7 @@ body {
 }
 
 /*------ para dispositivos medianos -----*/
-@media (min-width: $tablet) {
+@media (min-width: 768px) {
     #welcome {
         padding-top: $p30;
         padding-bottom: $p30;
@@ -130,7 +122,7 @@ body {
 }
 
 /*------ para dispositivos desktop -----*/
-@media (min-width: $desktop) {
+@media (min-width: 992px) {
     #welcome {
         padding-top: $p40;
         padding-bottom: $p40;
@@ -139,7 +131,7 @@ body {
 }
 
 /*------ para dispositivos desktop xx-large -----*/
-@media (min-width: $desktop-xxl) {
+@media (min-width: 1400px) {
     #welcome {
         padding-top: $p50;
         padding-bottom: $p50;
@@ -266,10 +258,33 @@ body {
     background-color: $dark-purple;
     font-weight: 500;
     color: $white;
+    @include mobile {
+        font-size: $f_07;
+    }
+    @include tablet {
+        font-size: $f_07;
+    }
+    @include desktop {
+        font-size: $f_09;
+    }
+    @include desktop-xl{
+        font-size: $f_1;
+    }
 }
 
 #footer img {
-    height: $h25;
+    @include mobile {
+        height: $h25;
+    }
+    @include tablet {
+        height: $h30;
+    }
+    @include desktop {
+        height: $h40;
+    }
+    @include desktop-xl{
+        height: $h50;
+    }
 }
 
 #info {
@@ -283,37 +298,4 @@ body {
 #copyright {
     padding-top: $p20;
     padding-bottom: $p10;
-}
-
-/*------ para dispositivos medianos -----*/
-@media (min-width: $tablet) {
-    #footer {
-        font-size: $f_07;
-    }
-    
-    #footer img {
-        height: $h30;
-    }
-}
-
-/*------ para dispositivos desktop -----*/
-@media (min-width: $desktop) {
-    #footer {
-        font-size: $f_09;
-    }
-    
-    #footer img {
-        height: $h40;
-    }
-}
-
-/*------ para dispositivos desktop xx-large -----*/
-@media (min-width: $desktop-xxl) {
-    #footer {
-        font-size: $f_1;
-    }
-    
-    #footer img {
-        height: $h50;
-    }
 }
