@@ -12,7 +12,6 @@
 /*-- carpeta utilities --*/
 @import "../utilities/mixins";
 
-/*------ CAROUSEL -----*/
 #carousel {
     padding: 30px 20px 0 20px;
     .carousel-inner {
@@ -20,53 +19,35 @@
     }
 }
 
-@media (min-width: 768px) {
-    #carousel {
-        padding: 40px 40px 0 40px;
-    }
-}
-
-/*------ para dispositivos desktop-----*/
-@media (min-width: 992px) {
-    #carousel {
-        padding: 50px 50px 0 50px;
-    }
-}
-
-/*------ para dispositivos desktop xx-large -----*/
-@media (min-width: 1400px) {
-    #carousel {
-        padding: 80px 180px 0 180px;
-    }
-}
-
-/*------ WELCOME -----*/
-
 #welcome {
     padding-top: $p20;
     padding-bottom: $p20;
 }
 
-/*------ para dispositivos medianos -----*/
-@media (min-width: 768px) {
+@include tablet {
+    #carousel {
+        padding: 40px 40px 0 40px;
+    }
     #welcome {
         padding-top: $p30;
         padding-bottom: $p30;
         font-size: $f_11;
     }
 }
-
-/*------ para dispositivos desktop -----*/
-@media (min-width: 992px) {
+@include desktop {
+    #carousel {
+        padding: 50px 50px 0 50px;
+    }
     #welcome {
         padding-top: $p40;
         padding-bottom: $p40;
         font-size: $f_12;
     }
 }
-
-/*------ para dispositivos desktop xx-large -----*/
-@media (min-width: 1400px) {
+@include desktop-xl{
+    #carousel {
+        padding: 80px 180px 0 180px;
+    }
     #welcome {
         padding-top: $p50;
         padding-bottom: $p50;

@@ -980,7 +980,6 @@ h2 {
 }
 
 /*-- carpeta utilities --*/
-/*------ CAROUSEL -----*/
 #carousel {
   padding: 30px 20px 0 20px;
 }
@@ -988,47 +987,35 @@ h2 {
   border-radius: 20px;
 }
 
-@media (min-width: 768px) {
-  #carousel {
-    padding: 40px 40px 0 40px;
-  }
-}
-/*------ para dispositivos desktop-----*/
-@media (min-width: 992px) {
-  #carousel {
-    padding: 50px 50px 0 50px;
-  }
-}
-/*------ para dispositivos desktop xx-large -----*/
-@media (min-width: 1400px) {
-  #carousel {
-    padding: 80px 180px 0 180px;
-  }
-}
-/*------ WELCOME -----*/
 #welcome {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/*------ para dispositivos medianos -----*/
 @media (min-width: 768px) {
+  #carousel {
+    padding: 40px 40px 0 40px;
+  }
   #welcome {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 1.1rem;
   }
 }
-/*------ para dispositivos desktop -----*/
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
+  #carousel {
+    padding: 50px 50px 0 50px;
+  }
   #welcome {
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 1.2rem;
   }
 }
-/*------ para dispositivos desktop xx-large -----*/
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
+  #carousel {
+    padding: 80px 180px 0 180px;
+  }
   #welcome {
     padding-top: 50px;
     padding-bottom: 50px;
