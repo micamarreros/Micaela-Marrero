@@ -18,14 +18,5 @@
         #nombre, #apellido, #email, #telefono, #mensaje {
             border: $dark-purple solid 1px;
         }
-        #send-button {
-            background-color: $dark-purple;
-            border: $dark-purple solid $b_1;
-            &:hover {
-                background-color: $white;
-                border: $dark-purple solid $b_1;
-                color: $dark-purple;
-            }
-        }
     }
 }
