@@ -85,7 +85,7 @@ h2 {
   font-weight: 500;
   color: #fff;
 }
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   #footer {
     font-size: 0.7rem;
   }
@@ -106,7 +106,7 @@ h2 {
   }
 }
 
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   #footer img {
     height: 25px;
   }
@@ -177,7 +177,7 @@ h2 {
   background-color: #C09AC8 !important; /*no pude cambiar el color de otra manera que no sea con !important*/
 }
 
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   .navbar-brand img {
     height: 40px;
     width: auto;
@@ -214,7 +214,7 @@ h2 {
 .nav-link:hover {
   color: #FBEBFF;
 }
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   .nav-link {
     font-size: 0.7rem;
   }
@@ -319,7 +319,7 @@ h2 {
   font-weight: 500;
   color: #fff;
 }
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   #footer {
     font-size: 0.7rem;
   }
@@ -340,7 +340,7 @@ h2 {
   }
 }
 
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   #footer img {
     height: 25px;
   }
@@ -411,7 +411,7 @@ h2 {
   background-color: #C09AC8 !important; /*no pude cambiar el color de otra manera que no sea con !important*/
 }
 
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   .navbar-brand img {
     height: 40px;
     width: auto;
@@ -448,7 +448,7 @@ h2 {
 .nav-link:hover {
   color: #FBEBFF;
 }
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   .nav-link {
     font-size: 0.7rem;
   }
@@ -588,7 +588,7 @@ h2 {
   font-weight: 500;
   color: #fff;
 }
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   #footer {
     font-size: 0.7rem;
   }
@@ -609,7 +609,7 @@ h2 {
   }
 }
 
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   #footer img {
     height: 25px;
   }
@@ -680,7 +680,7 @@ h2 {
   background-color: #C09AC8 !important; /*no pude cambiar el color de otra manera que no sea con !important*/
 }
 
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   .navbar-brand img {
     height: 40px;
     width: auto;
@@ -717,7 +717,7 @@ h2 {
 .nav-link:hover {
   color: #FBEBFF;
 }
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   .nav-link {
     font-size: 0.7rem;
   }
@@ -828,7 +828,7 @@ h2 {
   font-weight: 500;
   color: #fff;
 }
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   #footer {
     font-size: 0.7rem;
   }
@@ -849,7 +849,7 @@ h2 {
   }
 }
 
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   #footer img {
     height: 25px;
   }
@@ -920,7 +920,7 @@ h2 {
   background-color: #C09AC8 !important; /*no pude cambiar el color de otra manera que no sea con !important*/
 }
 
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   .navbar-brand img {
     height: 40px;
     width: auto;
@@ -957,7 +957,7 @@ h2 {
 .nav-link:hover {
   color: #FBEBFF;
 }
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   .nav-link {
     font-size: 0.7rem;
   }
@@ -1103,7 +1103,7 @@ h2 {
   font-weight: 500;
   color: #fff;
 }
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   #footer {
     font-size: 0.7rem;
   }
@@ -1124,7 +1124,7 @@ h2 {
   }
 }
 
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   #footer img {
     height: 25px;
   }
@@ -1195,7 +1195,7 @@ h2 {
   background-color: #C09AC8 !important; /*no pude cambiar el color de otra manera que no sea con !important*/
 }
 
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   .navbar-brand img {
     height: 40px;
     width: auto;
@@ -1232,7 +1232,7 @@ h2 {
 .nav-link:hover {
   color: #FBEBFF;
 }
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   .nav-link {
     font-size: 0.7rem;
   }
@@ -1382,7 +1382,7 @@ h2 {
   font-weight: 500;
   color: #fff;
 }
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   #footer {
     font-size: 0.7rem;
   }
@@ -1403,7 +1403,7 @@ h2 {
   }
 }
 
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   #footer img {
     height: 25px;
   }
@@ -1474,7 +1474,7 @@ h2 {
   background-color: #C09AC8 !important; /*no pude cambiar el color de otra manera que no sea con !important*/
 }
 
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   .navbar-brand img {
     height: 40px;
     width: auto;
@@ -1511,7 +1511,7 @@ h2 {
 .nav-link:hover {
   color: #FBEBFF;
 }
-@media (min-width: 200px) {
+@media (max-width: 767px) {
   .nav-link {
     font-size: 0.7rem;
   }
