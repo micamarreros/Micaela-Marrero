@@ -1,6 +1,6 @@
 /*------ para distintos tamaños -----*/
 @mixin mobile {
-    @media (max-width: 425px) {
+    @media (min-width: 320px) {
         @content;
     }
 }
