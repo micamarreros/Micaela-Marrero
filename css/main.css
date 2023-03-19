@@ -480,6 +480,7 @@ h2 {
   flex-direction: column;
   padding: 40px 40px 0 40px;
   color: #C09AC8;
+  transition: all 3s;
 }
 
 #card img {
@@ -746,6 +747,9 @@ h2 {
 /*------ para distintos tamaños -----*/
 #form_id {
   padding: 40px;
+}
+#form_id form {
+  transition: all 3s;
 }
 #form_id form #nombre, #form_id form #apellido, #form_id form #email, #form_id form #telefono, #form_id form #mensaje {
   border: #C09AC8 solid 1px;
@@ -1541,6 +1545,7 @@ h2 {
 #servicios {
   flex-direction: column;
   padding: 40px;
+  transition: all 3s;
 }
 
 /*# sourceMappingURL=main.css.map */

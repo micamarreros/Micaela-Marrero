@@ -18,5 +18,6 @@
         #nombre, #apellido, #email, #telefono, #mensaje {
             border: $dark-purple solid 1px;
         }
+        transition: all 3s;
     }
 }
